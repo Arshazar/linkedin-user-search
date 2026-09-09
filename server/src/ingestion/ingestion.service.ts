@@ -43,15 +43,14 @@ export class IngestionService {
 
     const envPath = this.configService.get<string>(
       'CSV_FILE_PATH',
-      '../300 user linkedin.csv',
+      './db/300 user linkedin.csv',
     );
 
     const candidates = [
       envPath,
       path.resolve(process.cwd(), envPath),
-      path.resolve(__dirname, '../../..', '300 user linkedin.csv'),
-      path.resolve(__dirname, '../../../..', '300 user linkedin.csv'),
-      path.resolve(process.cwd(), '../300 user linkedin.csv'),
+      path.resolve(__dirname, './db', '300 user linkedin.csv'),
+      path.resolve(process.cwd(), './db/300 user linkedin.csv'),
     ];
 
     for (const candidate of candidates) {

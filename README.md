@@ -86,7 +86,7 @@ The app runs on `http://localhost:5173` and talks to the API at
 | `PORT`               | API port                           | `3000`                                                                       |
 | `DATABASE_URL`       | PostgreSQL connection string       | `postgresql://postgres:postgrespassword@localhost:5432/linkedin_user_search` |
 | `ELASTICSEARCH_NODE` | Elasticsearch node URL             | `http://localhost:9200`                                                      |
-| `CSV_FILE_PATH`      | CSV file used by the seed script   | `../300 user linkedin.csv`                                                   |
+| `CSV_FILE_PATH`      | CSV file used by the seed script   | `./db/300 user linkedin.csv`                                                 |
 | `CLIENT_ORIGIN`      | Allowed CORS origin for the client | `http://localhost:5173`                                                      |
 
 ## API Overview

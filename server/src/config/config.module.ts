@@ -33,7 +33,7 @@ export function validateConfig(config: Record<string, unknown>): AppConfig {
     port,
     databaseUrl: String(config.DATABASE_URL),
     elasticsearchNode: String(config.ELASTICSEARCH_NODE),
-    csvFilePath: String(config.CSV_FILE_PATH ?? '../300 user linkedin.csv'),
+    csvFilePath: String(config.CSV_FILE_PATH ?? './db/300 user linkedin.csv'),
     clientOrigin: String(config.CLIENT_ORIGIN ?? 'http://localhost:5173'),
   };
 }
