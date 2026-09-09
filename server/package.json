@@ -1,5 +1,5 @@
 {
-  "name": "linkedin-search-server",
+  "name": "linkedin-user-search-server",
   "version": "1.0.0",
   "description": "NestJS backend for LinkedIn Search with PostgreSQL and Elasticsearch",
   "scripts": {

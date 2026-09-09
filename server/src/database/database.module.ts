@@ -24,7 +24,7 @@ async function ensureSkillsGinIndex(dataSource: DataSource): Promise<void> {
         type: 'postgres',
         url: configService.get<string>(
           'DATABASE_URL',
-          'postgresql://postgres:postgrespassword@localhost:5432/linkedin_search',
+          'postgresql://postgres:postgrespassword@localhost:5432/linkedin_user_search',
         ),
         entities: [User],
         synchronize: true, // auto-create schema & indexes

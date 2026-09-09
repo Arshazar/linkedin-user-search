@@ -3,12 +3,12 @@ version: '3.8'
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: linkedin_search_postgres
+    container_name: linkedin_user_searchearch_postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgrespassword
-      POSTGRES_DB: linkedin_search
+      POSTGRES_DB: linkedin_user_searchearch
     ports:
       - "5432:5432"
     volumes:
@@ -16,7 +16,7 @@ services:
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
-    container_name: linkedin_search_elasticsearch
+    container_name: linkedin_user_searchearch_elasticsearch
     restart: always
     environment:
       - discovery.type=single-node

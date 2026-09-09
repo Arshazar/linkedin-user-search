@@ -1,5 +1,5 @@
 {
-  "name": "linkedin-search-client",
+  "name": "linkedin-user-search-client",
   "private": true,
   "type": "module",
   "scripts": {
