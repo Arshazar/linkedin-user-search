@@ -38,6 +38,7 @@ export function RangePicker({ value, onChange, label, className }: RangePickerPr
             selected={value}
             onSelect={onChange}
             numberOfMonths={2}
+            resetOnSelect
           />
         </PopoverContent>
       </Popover>
